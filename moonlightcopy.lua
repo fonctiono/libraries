@@ -20,7 +20,7 @@ local FONTS = {
 }
 
 local COLORS = {
-    WindowBG = Color3.fromRGB(15, 15, 15),
+    WindowBG = Color3.fromRGB(12, 12, 12),
     ElementBG = Color3.fromRGB(20, 20, 20),
     BorderGray = Color3.fromRGB(45, 45, 45),
     TextGray = Color3.fromRGB(195, 195, 195),
@@ -119,11 +119,6 @@ local function AddShadow(parent)
 end
 
 function Library:CreateWindow(titleText)
-    -- Remove a previous copy made by this library.
-    local oldGui = CoreGui:FindFirstChild("MoonlightUI")
-    if oldGui then
-        oldGui:Destroy()
-    end
 
     local window = {
         Sections = {},
@@ -180,7 +175,7 @@ function Library:CreateWindow(titleText)
     WindowFrame:SetAttribute("AssetId", "123714237161450")
     WindowFrame:SetAttribute("TextureId", "85165299423433")
     WindowFrame.ImageColor3 = Library.AccentColor
-    WindowFrame.ImageTransparency = 0.5
+    WindowFrame.ImageTransparency = 0.95
     WindowFrame.ScaleType = Enum.ScaleType.Stretch
     WindowFrame.ResampleMode = Enum.ResamplerMode.Default
 
