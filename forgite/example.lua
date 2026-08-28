@@ -1,5 +1,5 @@
-local Library = loadstring(game:HttpGet("ex"))()
-local Window = Library:CreateWindow("ngalight | da.cli3nt")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fonctiono/libraries/refs/heads/main/forgite/forgite.lua"))()
+local Window = Library:CreateWindow("Window Name | Forgite UI Lib by da.cli3nt on discord")
 
 local Section1 = Window:CreateSection("Section 1")
 local Tab1 = Section1:CreateTab("Tab 1")
@@ -7,7 +7,7 @@ local Tab2 = Section1:CreateTab("Tab 2")
 
 
 local SettingsSection = Window:CreateSection("Settings")
-local SettingsTab = SettingsSection:CreateTab("GUI Settings")
+local SettingsTab = SettingsSection:CreateTab("GUI Settings") -- dont remove Settings Tab it contains UI Settings and i highly recommend keeping it.
 
 
 Tab1:AddToggle("Toggle", false, function(state)
@@ -27,6 +27,7 @@ Tab2:AddKeybind("Keybind", Enum.KeyCode.X, function(key)
 end)
 
 
+-- dont remove UI Settings i recommend keeping it
 SettingsTab:AddColorPicker("Color", Library.AccentColor, function(col)
     Library:SetAccentColor(col)
 end)
