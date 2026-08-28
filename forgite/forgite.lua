@@ -10,6 +10,7 @@
 
 
 ]]--
+
 local Library = {
     AccentColor = Color3.fromRGB(130, 0, 2),
     AccentObjects = {},
@@ -225,7 +226,7 @@ function Library:CreateWindow(titleText)
     WindowTitle.BackgroundTransparency = 1
     WindowTitle.FontFace = FONTS.Montserrat
     WindowTitle.RichText = true
-    WindowTitle.Text = titleText or "Moonlight Copy | discord @ da.cli3nt"
+    WindowTitle.Text = string.format("%s | UI Lib by t.me/j3j3wrld", titleText) or "Forgite UI Library | made by discord @ da.cli3nt"
     WindowTitle.TextSize = 14
     WindowTitle.TextXAlignment = Enum.TextXAlignment.Left
     WindowTitle.Parent = WindowFrame
