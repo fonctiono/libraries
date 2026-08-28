@@ -1,3 +1,4 @@
+-- recreation of moonlight (arsenal script)
 local Library = {
     AccentColor = Color3.fromRGB(130, 0, 2),
     AccentObjects = {},
