@@ -1,4 +1,15 @@
--- recreation of moonlight (arsenal script)
+--[[
+
+                  // Forgite v2.1 \\
+    // Author - da.cli3nt (discord) / t.me/j3j3wrld \\
+    This is a recreation of Moonlight (Arsenal Script) UI Library (private)
+    Dropdown were fixed by Claude as i couldnt fix it while working on it for 2 days straight.
+    Enjoy this library and please credit and dont say its yours.
+
+            - Thanks you for using Forgite -
+
+
+]]--
 local Library = {
     AccentColor = Color3.fromRGB(130, 0, 2),
     AccentObjects = {},
